@@ -1,0 +1,131 @@
+   29  echo "# BioinfSeminars" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:a-nemesis/BioinfSeminars.git\ngit push -u origin main
+   31  cat ~/.ssh/id_rsa_github.pub\n
+   32  ssh -T git@github.com
+   33  ssh -T git@github.com
+   37  ssh-add ~/.ssh/id_github
+   38  ssh-add ~/.ssh/id_rsa_github
+   39  chmod 600  ~/.ssh/id_rsa_github
+   40  chmod 640  ~/.ssh/id_rsa_github.pub
+   41  ssh -T git@github.com
+   47  git init
+   48  git add README.md
+   49  git commit -m "first commit"
+   50  git branch -M main
+   51  git remote add origin git@github.com:a-nemesis/BioinfSeminars.git
+   52  git remote -v
+   53  git push -u origin main
+   54  git branch
+   55  git status
+   56  git switch -c develop
+   57  git status
+   60  git status
+   61  git add data/samples.tsv
+   62  git status
+   63  git commit -m "Add samples.tsv with sample1 data"
+   64  git log
+   65  git show
+   66  git config --global user.name "a-nemesis"
+   67  git config --global user.email "arina.anurieva@gmail.com"
+   68  git remote -v
+   69  git switch main
+   70  git status
+   71  echo "git log shows the commit history (list of commits), while git show displays the details of a specific commit (what changed)." > diff.file
+   72  git add diff.file
+   73  git status
+   74  git commit -m "Add diff.file explaining log vs show"
+   75  git push origin main
+   76  git branch
+   77  git remote -v
+   78  git switch develop
+   82  git add scripts/hiiii.txt
+   83  git status
+   84  git ls-files
+   85  git log --oneline
+   86  git log origin/develop..HEAD --oneline
+   88  git log
+   89  git diff --staged
+   90  git log --oneline
+   91  git commit -m "Add hiiii.txt"
+   92  git status
+   93  git revert HEAD
+   94  git log --oneline
+   95  git show > revert_info.txt
+   96  git show
+   97  git add revert_info.txt\ngit commit -m "Add revert_info.txt with git show output"
+   98  git push origin develop
+  103  git clone https://github.com/Weakne55/Bioinformatics305/tree/master#
+  104  git clone https://github.com/Weakne55/Bioinformatics305.git
+  107  git remote remove origin
+  108  git remote add origin git@github.com:a-nemesis/Bioinf_HW1.git
+  109  git remote -v
+  110  git push -u origin main
+  111  git push -u origin master
+  116  git status
+  117  git commit -m "Cleanup temp files"
+  118  git commit -a -m "Cleanup temp files"
+  119  git status
+  120  git add -u
+  121  git commit -m "Cleanup temp files"
+  122  git push origin master
+  125  git switch -c investigation
+  126  git status
+  128  git add infected_reads.txt
+  129  git commit -m "Add infected_reads.txt"
+  130  git commit --amend -m "Task 2 - added infected_reads.txt"
+  131  git status
+  132  git log --oneline
+  140  git branch
+  141  git add mini_run.fastq
+  142  git commit -m "Task 3 - added mini_run.fastq"
+  143  git status
+  144  git log --oneline
+  145  git push --all origin
+  149  git status
+  150  git restore lab_disaster/experiment.log
+  152  git restore "lab_disaster/experiment.log" > command.txt
+  153  git branch master
+  154  git switch master
+  155  git add command.txt
+  156  git commit -m "Task 4 - added command.txt"
+  157  git push origin master
+  159  git echo "lab_disaster/experiment.log" > command.txt
+  162  echo "git restore lab_disaster/experiment.log" > command.txt
+  164  git branch
+  165  git add command.txt
+  166  git commit -m "Task 4 - added command.txt"
+  167  git push origin master
+  186  git branch
+  187  git add sort.txt
+  188  git status
+  189  git commit -m "Task 5 - added sort.txt"
+  190  git branch
+  191  git merge investigation
+  192  git push origin master
+  199  git branch
+  200  git add gees_fixed.csv
+  201  git add gens_fixed.csv
+  202  git add genes_fixed.csv
+  203  git status
+  204  git commit -m "Task 6 - genes_fixed.csv"
+  206  git add random.txt
+  207  git commit -m "Task 7 - added new random commit"
+  208  git status
+  209  git commit --amend -m "Task 8 - added new random commit"
+  210  git log --oneline
+  213  git add forgotten.txt
+  214  git commit --amend --no-edit
+  215  git log
+  216  git log --oneline
+  220  git branch
+  221  git add amend.txt
+  222  git commit -m "Task 8 0 added amend.txt"
+  223  git push origin master
+  224  git status
+  225  git branch
+  226  git switch -c cleaning
+  228  git branch
+  235  git branch
+  236  git add diskusage.file
+  237  git commit -m "Task 7 - added diskusage.file"
+  238  history | gret git > report_commands.txt
+  239  history | grep git > report_commands.txt
